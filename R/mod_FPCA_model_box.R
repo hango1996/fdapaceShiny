@@ -25,7 +25,7 @@ mod_FPCA_model_box_ui <- function(id){
                           selectizeInput(ns("pred_col"),
                                          "Select Predictor Function",
                                          choices = c()),
-                          infoBoxOutput(ns("perc_sparse"), width = NULL),
+                          #infoBoxOutput(ns("perc_sparse"), width = NULL),
                           tags$br(),
                           downloadButton(ns("download_model"), label = "Download Model"),
                           actionButton(ns("delete_model"), "Remove Model")),
